@@ -1,0 +1,60 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+
+  box-shadow: 0px 0px 5px #00000010;
+  cursor: pointer;
+}
+
+.task > p{
+  max-width: 340px;
+  word-wrap: break-word;
+}
+
+.checked > p {
+  text-decoration: line-through;
+}
+
+.checked {
+  background-color: #ffaaaa;
+}
+
+.task:hover {
+  background-color: #efffff;
+  box-shadow: 0px 0px 5px #00000020;
+}
+
+.checked:hover {
+  background-color: #ffdddd;
+}
+
+.task > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task > div > button {
+  background-color: white;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 25px;
+  height: 25px;
+
+  padding: 5px;
+}
+
+.task > div > button:hover {
+  background-color: #ff3030;
+  color: white;
+}
